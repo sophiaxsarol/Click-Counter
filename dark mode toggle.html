@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+</head>
+<body style="background: white; color: black;">
+  <button id="toggleBtn">Switch to Dark Mode</button>
+
+  <script>
+    let dark = false;
+    document.getElementById('toggleBtn').onclick = function () {
+      if (dark) {
+        document.body.style.background = "white";
+        document.body.style.color = "black";
+        this.textContent = "Switch to Dark Mode";
+      } else {
+        document.body.style.background = "black";
+        document.body.style.color = "white";
+        this.textContent = "Switch to Light Mode";
+      }
+      dark = !dark;
+    }
+  </script>
+</body>
+</html>
